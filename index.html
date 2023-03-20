@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Cafe</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Lobster&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><div id="logo-img" alt="Logo image"></div></a>
+              <ul class="nav justify-content-center">
+                <li class="nav-items">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link" href="">About</a>
+                </li>
+                <li id="phone" class="nav-items">
+                  <a class="nav-link" href="tel:0155 166 1144"><span>0155-166-1144</span></a>
+                </li>
+              </ul>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Florida Cafe</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div id="main-content" class="container">
+      <div class="cafe">
+        <img src="./image/cafe_768.jpg" alt="Picture of resturant" class="img-fluid d-block d-sm-none">
+      </div>
+
+      <div id="home-titles" class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <a href="menu.html"><div id="menu" class="img-fluid"><span>menu</span></div></a>
+        </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <a href="special.html"><div id="special" class="img-fluid"><span>specials</span></div></a>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <a href="https://goo.gl/maps/Wr8rC8Qo8LGAJ8ke8" target="_blank"></a>
+            <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3415.433326329786!2d29.780879600000002!3d31.1254785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f59559f53d8fd5%3A0x9523e36f98b222c!2sFlorida%20cafe%20%26%20playstation!5e0!3m2!1sen!2seg!4v1678955201999!5m2!1sen!2seg" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <span>map</span>
+            </div>
+          </div>
+      </div><!-- End of #home-titles -->
+    </div>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span>Hours:</span><br>
+            Sat-Wed: 11:00am - 1:00pm<br>
+            Thurs-Fri: 24Hours<br>
+            Official Holidays: 24Hours<br>
+            <hr class="d-block d-sm-none">
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Address:</span><br>
+            Elbakwat st. Bianki<br>
+            Bitash, Agamy, Alexandria<br>
+            <p>* Delivery area within 1 kilo, <br>
+              with minimum order of 50LE free deliveries.</p>
+            <hr class="d-block d-sm-none">
+          </section>
+          <section id="testi" class="col-sm-4">
+            <p>"The best Cafe I've been to! And that's saying a lot, since I've been many!"</p>
+            <p>"Amazing drink! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+          </section>
+        </div>
+        <div class="text-center">&copy; Copyright Florida Cafe 2023</div>
+      </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

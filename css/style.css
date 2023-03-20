@@ -1,0 +1,210 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(60, 60, 60);
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* HEADER */
+#logo-img {
+    background: url('../image/logo-mini.jpg') no-repeat;
+    height: 80px;
+    width: 272px;
+    border: rgb(60, 60, 60) solid 1px;
+    border-radius: 6%;
+}
+.nav-items a {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+.nav-items a:hover {
+    color: gold;
+    background-color: rgb(60, 60, 60);
+    border-radius: 10%;
+    box-shadow: 0 0 20px rgb(60, 60, 60);
+}
+/* END HEADER */
+
+/*HOME PAGE */
+.container .cafe {
+    box-shadow: 0 0 50px rgb(90, 90, 90);
+    border: 2px solid rgb(90, 90, 90);
+    margin-bottom: 15px;
+}
+#menu, #special, #map {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid rgb(60, 60, 60);
+    overflow: hidden;
+}
+#menu:hover, #special:hover, #map:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu {
+    background: url(../image/menu.jpg) no-repeat;
+    background-position: center;
+}
+#special {
+    background: url(../image/special.jpg) no-repeat;
+    background-position: center;
+}
+#menu span, #special span, #map span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+/* END HOME PAGE */
+
+/* MENU */
+#menu-title {
+    margin-top: 130px;
+}
+#voucher {
+    color: gold;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.categories {
+    position: relative;
+    border: 2px solid rgb(90, 90, 90);
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+.categories span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+.categories:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+/* FOOTER */
+.panel-footer {
+    margin-top: 5px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+#hours, #address {
+    line-height: 2;
+}
+#hours > span, #address > span {
+    font-size: 1.3em;
+}
+#address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+}
+#testi {
+    font-style: italic;
+}
+#testi p:nth-child(2) {
+    margin-top: 25px;
+}
+/* END FOOTER */
+
+  /********** Extra Large devices only **********/
+ @media (min-width: 1200px) {
+    .container .cafe {
+        background: url(../image/cafe_1200.jpg) no-repeat;
+        height: 625px;
+    }
+  }
+  
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container .cafe {
+        background: url(../image/cafe_992.jpg) no-repeat;
+        height: 518px;
+    }
+}
+  
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .cafe {
+        background: url(../image/cafe_768.jpg) no-repeat;
+        height: 401px;
+    }
+    .nav-items a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/********** small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+    .container .cafe {
+        background: url(../image/cafe_576.jpg) no-repeat;
+        height: 300px;
+
+    }
+    .nav-items {
+        display: none;
+    }
+    #phone {
+        display: contents;
+    }
+
+    #menu, #special {
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+  }
+
+/********** Extra small devices only **********/
+@media (max-width: 575px) {
+    .nav-items {
+        display: none;
+    }
+    #menu, #special {
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+    .container .cafe {
+        margin-top:  30px;
+        padding: 0;
+        display: contents;
+    }
+
+    /* FOOTER */
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0;
+    }
+    .panel-footer section br {
+        width: 50%;
+    }
+}
